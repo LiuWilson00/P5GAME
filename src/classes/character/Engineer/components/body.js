@@ -25,7 +25,7 @@ class Body extends Entity {
     //頭髮
     p5.fill(this.color.hair);
     p5.rect(0, 0, this.w, this.h / 6, 10, 10, 0, 0);
-    p5.rect(0, this.h / 6, this.w / 4, this.h / 8);
+    p5.rect(0, this.h / 6 - 10, this.w / 4, this.h / 8);
     p5.triangle(
       0,
       this.h / 6 + this.h / 8 - 10,
@@ -86,7 +86,6 @@ class Body extends Entity {
     //褲子
     p5.fill(this.color.pants);
     p5.rect(0, (this.h * 6) / 7, this.w, this.h / 7);
-
   }
 }
 export default Body;
